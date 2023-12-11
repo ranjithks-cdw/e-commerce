@@ -1,6 +1,6 @@
 const Page404 = () => {
     return (
-        <></>
+        <>Error</>
     );
 };
 
