@@ -3,7 +3,7 @@ import './globals.css'
 import Header from '@/shared/components/header/Header'
 
 export const metadata: Metadata = {
-  title: 'E Commerce',
+  title: 'Next Commerce',
   description: 'Next Application',
 }
 
