@@ -1,4 +1,4 @@
-import Layout from "./shared/components/layout/Layout";
+import {Layout} from "../src/shared/components/layout/Layout.js";
 
 const startApp = () => {
     Layout.show();

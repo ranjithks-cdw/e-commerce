@@ -1,10 +1,12 @@
 /**
- * create an element with  CSS class
+ * create an element with  CSS class and id
  */
-export const createElement = (tag, className) => {
-    const el = document.createElement(tag);
+export const createElement = (tag, attributes) => {
+    const attr = attributes && attributes;
+    const el = Object.assign(
+        document.createElement(tag), {...attr}
+    );
 
-    el.className = className;
     return el;
 };
 
