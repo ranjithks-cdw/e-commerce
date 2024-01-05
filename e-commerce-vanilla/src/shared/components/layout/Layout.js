@@ -1,21 +1,21 @@
-import { createElement } from "../../../utils/htmlUtils";
-import Header from "../header/Header";
+import { createElement } from "../../../utils/htmlUtils.js";
+import Header from "../header/Header.js";
+import Home from '../../../pages/home/Home.js';
 
-const Layout = {
-    create: () => createLayout(),
-    show: () => showLayout(),
+export const Layout = {
+    create: async () => await createLayout(),
+    show: async () => await showLayout(),
 };
 
-const createLayout = () => {
-    Header.navigation.create();
+const createLayout = async () => {
+    Header.addComponent();
     
     const root = document.querySelector('#root');
     const main = createElement('main');
     root.appendChild(main);
+    await Home();
 };
 
-const showLayout = () => {
-    createLayout();
+const showLayout = async () => {
+    await createLayout();
 };
- 
-export default Layout;
