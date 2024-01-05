@@ -1,0 +1,38 @@
+.shop-by-categories {
+    width: 95%;
+    margin: 1.5rem auto;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+}
+
+.category-content {
+    margin-top: 1.2rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.category-card {
+    text-align: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition-duration: 0.25s;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    transition-duration: 0.25s;
+}
+
+.category-image {
+    aspect-ratio: 1 / 1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.category-name {
+    font-size: 1.2rem;
+}

@@ -1,6 +1,7 @@
 import {lazy} from 'react';
 
 import APP_PATHS from '../constants/routeConstants';
+import { getFeatures } from '../utils/pageUtils';
 
 const Home = lazy(() => import('../pages/home/Home'));
 const Products = lazy(() => import("../pages/products/Products"));
@@ -12,7 +13,7 @@ const Login = lazy(() => import("../pages/login/Login"));
 
 
 const allRoutes = [
-    {path: APP_PATHS.HOME.PATH, element: <Home />},
+    {path: APP_PATHS.HOME.PATH, element: <Home />, loader: (() => getFeatures('home'))},
     {path: APP_PATHS.PRODUCTS.PATH, element: <Products />},
     {path: APP_PATHS.PRODUCT_DESCRIPTION.PATH, element: <ProductDescrptionPage />},
     {path: APP_PATHS.CART.PATH, element: <Cart />},
