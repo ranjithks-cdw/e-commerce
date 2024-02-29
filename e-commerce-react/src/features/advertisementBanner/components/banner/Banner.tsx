@@ -1,4 +1,4 @@
-import { adBannerType } from "../types/adBannerTypes";
+import { adBannerType } from "../../types/adBannerTypes";
 
 const Banner = (props: adBannerType) => {
     const {adImageUrl, adName, adRedirectUrl} = props;

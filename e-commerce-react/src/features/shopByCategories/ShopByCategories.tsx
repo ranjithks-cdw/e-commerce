@@ -3,7 +3,7 @@ import { SBCFeatureTitles } from "./constants/titleConstants";
 import APP_PATHS from "../../constants/routeConstants";
 import React, { useEffect, useState } from "react";
 import { sbcTypes } from "./types/categoryTypes";
-import CategoryCard from "./components/categoryCard/categoryCard";
+import CategoryCard from "./components/categoryCard/CategoryCard";
 import './styles.css';
 
 const ShopByCategories = () => {

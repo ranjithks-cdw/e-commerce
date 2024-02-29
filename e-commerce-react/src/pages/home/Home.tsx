@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import JsonContent from "../../features/jsonContent/JsonContent";
+import ComponentConfig from "../../features/componentConfig/ComponentConfig";
 
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
 
     return ( 
         <>
-            <JsonContent contents={features.contents} />
+            <ComponentConfig contents={features.contents} />
         </>
      );
 }

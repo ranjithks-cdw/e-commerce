@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { components } from "../dynamicComponent/DynamicComponent";
 import Loader from "../../shared/components/loader/Loader";
 
-const JsonContent = ({contents}: featureTypes) => {
+const ComponentConfig = ({contents}: featureTypes) => {
     const data = contents?.map((content, index) => {
         const ComponentToRender = (components as any)[content] && (components as any)[content].component;
         return (
@@ -19,4 +19,4 @@ const JsonContent = ({contents}: featureTypes) => {
      );
 };
 
-export default JsonContent;
+export default ComponentConfig;
